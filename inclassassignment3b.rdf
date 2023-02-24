@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b/"
+     xml:base="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:pizza="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b">
+        <owl:imports rdf:resource="http://www.co-ode.org/ontologies/pizza/2.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000000">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping"/>
+        <rdfs:comment>Barbecue sauce is a sauce used as a marinade, basting, condiment, or topping for meat cooked in the barbecue cooking style, including pork or beef ribs and chicken.</rdfs:comment>
+        <rdfs:label xml:lang="en">BBQSaucetopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000001">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping"/>
+        <rdfs:comment>Pesto is a sauce that traditionally consists of crushed garlic, European pine nuts, coarse salt, basil leaves, and hard cheese such as Parmigiano-Reggiano or Pecorino Sardo, all blended with olive oil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pestosaucetopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000002">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping"/>
+        <rdfs:comment>Marinara sauce is a tomato sauce usually made with tomatoes, garlic, herbs, and onions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Marinarasaucetopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000003">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping"/>
+        <rdfs:comment>It is a sauce traditionally made from a white roux and milk</rdfs:comment>
+        <rdfs:label xml:lang="en">Whitesaucetopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000004">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SauceTopping"/>
+        <rdfs:comment>Buffalo sauce is made with a mixture of hot sauce, butter, vinegar, and Worcestershire sauce.</rdfs:comment>
+        <rdfs:label xml:lang="en">Buffalosaucetopping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000005">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">BBQ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000006">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Flatbread</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000007">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Pesto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000008">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#hasBase"/>
+                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#DeepPanBase"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chicago</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000011">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase"/>
+        <rdfs:label xml:lang="en">Siciliancrustbase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000012">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#PizzaBase"/>
+        <rdfs:label xml:lang="en">Flatbreadbase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000016">
+        <rdfs:label xml:lang="en">sahanaflatbreadbase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLClass_SNA00000007"/>
+        <pizza:hasBase rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000016"/>
+        <pizza:hasCountryOfOrigin rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000027"/>
+        <pizza:hasSpiciness rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000023"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000018"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000019"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000020"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000021"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000024"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000025"/>
+        <pizza:hasTopping rdf:resource="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000026"/>
+        <rdfs:label xml:lang="en">sahanapizza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000018">
+        <rdfs:label xml:lang="en">sahanachessyvegetabletopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000019">
+        <rdfs:label xml:lang="en">sahanachickentopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000020">
+        <rdfs:label xml:lang="en">sahanapestosaucetopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000021">
+        <rdfs:label xml:lang="en">sahanagarlictopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000022">
+        <rdfs:label xml:lang="en">sahanaslicedtomatotopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000023">
+        <rdfs:label xml:lang="en">sahanamediumspiciness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000024">
+        <rdfs:label xml:lang="en">sahanaoniontopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000025">
+        <rdfs:label xml:lang="en">sahanajalapenopeppertopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000026">
+        <rdfs:label xml:lang="en">sahanaspicytopping</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sai/ontologies/2023/1/inclassassignment3b#OWLNamedIndividual_SNA00000027">
+        <rdfs:label xml:lang="en">sahanaamerica</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi -->
+
